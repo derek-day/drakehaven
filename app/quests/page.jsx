@@ -1,22 +1,17 @@
-'use client';
-
-
 import React from 'react';
-import { Row, Col } from 'reactstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { withPageAuthRequired } from '@auth0/nextjs-auth0/client';
 
-import PageLink from './PageLink';
-// import { Link } from "react-router-dom";
+import questData from './questData';
+
+import { Row, Col } from 'reactstrap';
+// import PageLink from './../PageLink';
 import Link from 'next/link'
 
-import questData from '../app/quests/questData';
 
-const Content = () => (
-  <div className="next-steps my-5" data-testid="content">
-    <h1 className="my-5 text-center" data-testid="content-title">
-      Quests
-    </h1>
-    <Row className="d-flex justify-content-between" data-testid="content-items">
+export default function ProductList() {
+  return (
+    <>
+      <Row className="d-flex justify-content-between" data-testid="content-items">
       {questData.map((col, i) => (
         <Col key={i} md={5} className="mb-4">
           <h6 className="mb-3">
@@ -28,24 +23,11 @@ const Content = () => (
             {col.title}
           </PageLink> */}
 
-          <Link href={'/quests/' + col.id}>
+          <Link key={col.id} href={'/quests/' + col.id}>
           {/* <Link key={col.id} href='/quest'> */}
           {/* <Link key={col.id} href={'/quest/' + col.id}> */}
             <h2>{col.title}</h2>
           </Link>
-
-
-
-          {/* href={'/posts/' + post.id} */}
-
-
-          {/* <Route exact path="/ProductPage/:id" render={() => <ProductPage data={col.id} />}/>  */}
-
-
-          {/* <a href={col.link}>
-            <FontAwesomeIcon icon="link" className="mr-2" />
-             {col.title}
-          </a> */}
 
           </h6>
           <h7 className="mb-3 q-subtitle">{col.subtitle}</h7>
@@ -55,7 +37,11 @@ const Content = () => (
         </Col>
       ))}
     </Row>
-  </div>
-);
 
-export default Content;
+      <h1>Quest List</h1>
+      <h2>Quest 1</h2>
+      <h2>Quest 2</h2>
+      <h2>Quest 3</h2>
+    </>
+  )
+}
