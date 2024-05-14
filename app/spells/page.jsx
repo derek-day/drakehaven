@@ -12,6 +12,8 @@ import Loading from '../../components/Loading';
 
 export default function SpellList() {
   const { user, isLoading } = useUser();
+  // const data = spellData.find((q) => q.id === user.id)
+  // console.log(data);
 
   return (
     <>
@@ -22,6 +24,7 @@ export default function SpellList() {
       <>
         <Row className="d-flex justify-content-between" data-testid="content-items">
           {spellData.map((col, i) => (
+          // {spellData.map((col, i) => (
             <Col key={i} md={5} className="mb-4">
               <h6 className="mb-3">
                 <Link key={col.id} href={'/spells/' + col.id}>
