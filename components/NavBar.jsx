@@ -26,7 +26,7 @@ const NavBar = () => {
 
   return (
     <div className="nav-container" data-testid="navbar">
-      <Navbar color="light" light expand="md">
+      <Navbar color="#1C1819" dark expand="md">
         <Container>
           {/* <NavbarBrand className="logo" /> */}
           <img src="/logo.png" width={80} height={80} />

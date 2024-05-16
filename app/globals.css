@@ -3,6 +3,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  background-color: #1C1819 !important;
+}
+
 code {
   white-space: pre-wrap; 
   word-break: break-all; 

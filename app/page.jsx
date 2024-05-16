@@ -13,7 +13,7 @@ export default function Index() {
   return (
     <>
       {/* <Hero /> */}
-      {/* <Content /> */}
+      <Content />
       <Quests />
       <hr />
       <Spells />

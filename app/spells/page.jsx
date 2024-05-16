@@ -26,11 +26,9 @@ export default function SpellList() {
           {spellData.map((col, i) => (
           // {spellData.map((col, i) => (
             <Col key={i} md={5} className="mb-4">
-              <h6 className="mb-3">
                 <Link key={col.id} href={'/spells/' + col.id}>
                   <h2>{col.title}</h2>
                 </Link>
-              </h6>
             </Col>
           ))}
         </Row>

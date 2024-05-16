@@ -8,7 +8,6 @@ export default withPageAuthRequired(
     const { user } = await getSession();
     return (
       <>
-        <div className="mb-5" data-testid="ssr">
           <h1 data-testid="ssr-title">Server-side Rendered Page</h1>
           <div data-testid="ssr-text">
             <p>
@@ -17,7 +16,6 @@ export default withPageAuthRequired(
               page instead.{' '}
             </p>
           </div>
-        </div>
         <div className="result-block-container" data-testid="ssr-json">
           <div className="result-block">
             <h6 className="muted">User</h6>
