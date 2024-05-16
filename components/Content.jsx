@@ -8,7 +8,7 @@ import localFont from 'next/font/local'
 const francisco = localFont({
   src: [
     {
-      path: '/fonts/Francisco.ttf',
+      path: '../public/fonts/francisco.ttf',
       weight: '100'
     }
   ],
@@ -26,7 +26,7 @@ const Content = () => (
   >
       <h6 className='text-white py-2 px-2 mb-5' style={{pointerEvents: 'none', width: "10rem", color:"white", letterSpacing:"0.15rem", borderColor: "white", border: "1px solid white", borderRadius: "1rem", textAlignLast: "center", fontWeight: "500" }}>TYE SHEETS</h6>
       {/* <button type="button" className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded' style={{pointerEvents: 'none', width: "15rem", color:"white", letterSpacing:"0.15rem", borderColor: "white" }}>TYE SHEETS</button> */}
-      <h3 className={`${francisco.variable}`} >Drakehaven</h3>
+      <h3 className={`${francisco.src}`} >Drakehaven</h3>
       <img src='/hero.png' style={{width: "50%"}} />
   </div>
   // <div className="next-steps my-5" data-testid="content">
