@@ -3,17 +3,6 @@ import { Row, Col } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import contentData from '../utils/contentData';
-import localFont from 'next/font/local'
-
-const francisco = localFont({
-  src: [
-    {
-      path: '../public/fonts/francisco.ttf',
-      weight: '100'
-    }
-  ],
-  variable: '--font-francisco'
-})
 
 
 const Content = () => (
