@@ -17,17 +17,19 @@ const francisco = localFont({
 
 
 const Content = () => (
-  <div style={{
+  <div className='drake-border' style={{
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
-    flex: "1"
+    flex: "1",
+    placeItems: "center",
+    width: "75%"
   }}
   >
-      <h6 className='text-white py-2 px-2 mb-5' style={{pointerEvents: 'none', width: "10rem", color:"white", letterSpacing:"0.15rem", borderColor: "white", border: "1px solid white", borderRadius: "1rem", textAlignLast: "center", fontWeight: "500" }}>TYE SHEETS</h6>
-      {/* <button type="button" className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded' style={{pointerEvents: 'none', width: "15rem", color:"white", letterSpacing:"0.15rem", borderColor: "white" }}>TYE SHEETS</button> */}
-      <h3 className={`${francisco.src}`} >Drakehaven</h3>
-      <img src='/hero.png' style={{width: "50%"}} />
+      <h7 className='text-white py-2 px-1 mt-5 mb-5' style={{pointerEvents: 'none', width: "12rem", color:"#f8f9fa", letterSpacing:"0.1rem", borderColor: "#f8f9fa", border: "0.8px solid white", borderRadius: "1rem", textAlignLast: "center", fontWeight: "300" }}>DRAKEHAVEN</h7>
+      {/* <h7 className='text-white py-2 px-1 mt-5 mb-5' style={{pointerEvents: 'none', width: "12rem", color:"#f8f9fa", letterSpacing:"0.1rem", borderColor: "#f8f9fa", border: "0.8px solid white", borderRadius: "1rem", textAlignLast: "center", fontWeight: "300" }}>TYE SHEETS</h7> */}
+      <h1 className='{`${francisco.src}`} mb-5' style={{color: '#EE3623', fontFamily: 'Francisco', letterSpacing: '0.05rem', fontWeight: '100', fontSize: 'rem', opacity: '0.92'}}>Where the Dragons once wept</h1>
+      <img src='/hero1.png' style={{width: "100%"}} />
   </div>
   // <div className="next-steps my-5" data-testid="content">
   //   <h2 className="my-5 text-center" data-testid="content-title">
