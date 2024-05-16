@@ -12,12 +12,11 @@ const Content = () => (
     flexDirection: "column",
     flex: "1",
     placeItems: "center",
-    width: "75%"
+    width: "85%"
   }}
   >
       <h7 className='text-white py-2 px-1 mt-5 mb-5' style={{pointerEvents: 'none', width: "12rem", color:"#f8f9fa", letterSpacing:"0.1rem", borderColor: "#f8f9fa", border: "0.8px solid white", borderRadius: "1rem", textAlignLast: "center", fontWeight: "300" }}>DRAKEHAVEN</h7>
-      {/* <h7 className='text-white py-2 px-1 mt-5 mb-5' style={{pointerEvents: 'none', width: "12rem", color:"#f8f9fa", letterSpacing:"0.1rem", borderColor: "#f8f9fa", border: "0.8px solid white", borderRadius: "1rem", textAlignLast: "center", fontWeight: "300" }}>TYE SHEETS</h7> */}
-      <h1 className='{`${francisco.src}`} mb-5' style={{color: '#EE3623', fontFamily: 'Francisco', letterSpacing: '0.05rem', fontWeight: '100', fontSize: 'rem', opacity: '0.92'}}>Where the Dragons once wept</h1>
+      <h1 className='{`${francisco.src}`} mb-5 px-5' style={{color: '#EE3623', fontFamily: 'Francisco', letterSpacing: '0.025rem', fontWeight: '100', fontSize: 'rem', opacity: '0.92'}}>Welcome to the datahub for the century city - a land free from all dragons.</h1>
       <img src='/hero.png' style={{width: "100%"}} />
   </div>
   // <div className="next-steps my-5" data-testid="content">
