@@ -68,6 +68,8 @@ p code {
 
 @font-face {
   font-family: "Francisco";
-  src: url('../public/fonts/francisco.ttf') format("truetype");
+  /* src: url('../public/fonts/francisco.ttf') format("truetype"); */
+  src: url('/fonts/francisco.ttf') format("truetype");
+
   font-display: swap;
 }
