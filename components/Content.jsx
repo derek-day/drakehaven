@@ -11,12 +11,12 @@ const Content = () => (
     justifyContent: "center",
     flexDirection: "column",
     flex: "1",
-    placeItems: "center",
-    width: "85%"
+    placeItems: "center"
   }}
   >
-      <h7 className='text-white py-2 px-1 mt-5 mb-5' style={{pointerEvents: 'none', width: "12rem", color:"#f8f9fa", letterSpacing:"0.1rem", borderColor: "#f8f9fa", border: "0.8px solid white", borderRadius: "1rem", textAlignLast: "center", fontWeight: "300" }}>DRAKEHAVEN</h7>
-      <h1 className='{`${francisco.src}`} mb-5 px-5' style={{color: '#EE3623', fontFamily: 'Francisco', letterSpacing: '0.025rem', fontWeight: '100', fontSize: 'rem', opacity: '0.92'}}>Welcome to the datahub for the century city - a land free from all dragons.</h1>
+      {/* <img src="/logo.png" width={100} height={100} className='mt-4' /> */}
+      <h6 className='text-white px-1 mt-5 mb-5' style={{paddingTop: '0.5rem !important', paddingBottom: '0.55rem !important', pointerEvents: 'none', width: "12rem", color:"#f8f9fa", letterSpacing:"0.1rem", borderColor: "#f8f9fa", border: "0.8px solid white", borderRadius: "1rem", textAlignLast: "center", fontWeight: "300" }}>DRAKEHAVEN</h6>
+      <h1 className='{`${francisco.src}`} mb-5 mx-5' style={{color: '#f3482a', fontFamily: 'Francisco', letterSpacing: '0.015rem', fontWeight: '100', fontSize: '2rem'}}>Welcome to the century city - a land free from all dragons.</h1>
       <img src='/hero.png' style={{width: "100%"}} />
   </div>
   // <div className="next-steps my-5" data-testid="content">

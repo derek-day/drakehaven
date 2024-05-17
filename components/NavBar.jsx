@@ -29,32 +29,38 @@ const NavBar = () => {
       <Navbar color="#1C1819" dark expand="md">
         <Container>
           {/* <NavbarBrand className="logo" /> */}
-          <img src="/logo.png" width={80} height={80} />
+          {/* <img src="/logo.png" width={80} height={80} /> */}
           <NavbarToggler onClick={toggle} data-testid="navbar-toggle" />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar data-testid="navbar-items">
-              <NavItem>
+              {/* <NavItem>
                 <PageLink href="/" className="nav-link" testId="navbar-home">
                   Home
                 </PageLink>
+              </NavItem> */}
+              <NavItem>
+                <PageLink href="/" className="nav-link" testId="navbar-home">
+                  <img className="drakelogo" src="/logo.png" width={80} height={80} />
+                </PageLink>
               </NavItem>
+
               {user && (
                 <>
                   <NavItem>
-                    <PageLink href="/csr" className="nav-link" testId="navbar-csr">
-                      Client-side rendered page
+                    <PageLink href="/quests" className="nav-link" testId="navbar-csr">
+                      Quests
                     </PageLink>
                   </NavItem>
                   <NavItem>
-                    <PageLink href="/ssr" className="nav-link" testId="navbar-ssr">
-                      Server-side rendered page
+                    <PageLink href="/spells" className="nav-link" testId="navbar-ssr">
+                      Spells
                     </PageLink>
                   </NavItem>
-                  <NavItem>
+                  {/* <NavItem>
                     <PageLink href="/external" className="nav-link" testId="navbar-external">
-                      External API
+                      Map
                     </PageLink>
-                  </NavItem>
+                  </NavItem> */}
                 </>
               )}
             </Nav>

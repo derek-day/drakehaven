@@ -23,8 +23,8 @@ export default function RootLayout({ children }) {
         <UserProvider>
           <main id="app" className="d-flex flex-column h-100" data-testid="layout">
             <NavBar />
-            <Container className="flex-grow-1 mt-5">{children}</Container>
-            <Footer />
+            <Container className="flex-grow-1 mt-2 mb-5 pb-5">{children}</Container>
+            {/* <Footer /> */}
           </main>
         </UserProvider>
       </body>

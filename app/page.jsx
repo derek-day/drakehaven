@@ -14,11 +14,11 @@ export default function Index() {
     <>
       {/* <Hero /> */}
       <Content />
-      <Quests />
+      {/* <Quests />
       <hr />
       <Spells />
       <hr />
-      <Map />
+      <Map /> */}
     </>
   );
 }
