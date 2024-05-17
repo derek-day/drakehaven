@@ -16,8 +16,8 @@ export default function SpellDetails({
 
   return (
     <>
-      <h1>{spell.title}</h1>
-      <ul>
+      <h1 className='spell-title'>{spell.title}</h1>
+      <ul className='spell-list '>
         <li>Level: {spell.level}</li>
         <li>School: {spell.school}</li>
         <li>Casting Time: {spell.casttime}</li>

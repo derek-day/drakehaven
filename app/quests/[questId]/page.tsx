@@ -16,10 +16,9 @@ export default function QuestDetails({
 
   return (
     <>
-      <h1>{quest.title}</h1>
-      <h2>{quest.subtitle}</h2>
-      <p>{quest.description}</p>
-      <img src={quest.image} width={600} height={500} />
+      <h1 className='quest-title'>{quest.title}</h1>
+      <p className='quest-desc px-3 py-2'>{quest.description}</p>
+      {/* <img src={quest.image} width={600} height={500} /> */}
     </>
   )
 }

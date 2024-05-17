@@ -228,7 +228,6 @@ h6 {
   top: 2rem;
 }
 
-
 .quest-link {
   font-family: 'Ghibli';
   color: var(--light);
@@ -249,6 +248,16 @@ h6 {
   text-decoration-color: white !important;
 }
 
+.quest-title {
+  font-family: "Ghibli";
+  font-weight: 400;
+}
+
+.quest-desc {
+  font-family: "Ghibli";
+  font-weight: 100;
+}
+
 .spell-link {
   font-family: 'Ghibli';
   color: var(--light);
@@ -267,6 +276,17 @@ h6 {
   text-decoration-thickness: 0.7px !important;
   text-underline-offset: 9px;
   text-decoration-color: white !important;
+}
+
+.spell-title {
+  font-family: "Ghibli";
+  font-weight: 400;
+}
+
+.spell-list li {
+  color: var(--light);
+  font-family: "Ghibli";
+  font-weight: 100;
 }
 
 .style-text {
