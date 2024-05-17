@@ -11,22 +11,36 @@ import Link from 'next/link'
 export default function QuestList() {
   return (
     <>
-      <h1 className="my-5 text-center" data-testid="content-title">Current Quests</h1>
-      <Row className="d-flex justify-content-between" data-testid="content-items">
-        {questData.map((col, i) => (
-          <Col key={i} md={5} className="mb-4">
-            <h6 className="mb-3">
-              <Link key={col.id} href={'/quests/' + col.id}>
-                <h3>{col.title}</h3>
-              </Link>
-            </h6>
-            <h7 className="mb-3 q-subtitle">{col.subtitle}</h7>
-            <p className="mt-3">{col.description}</p>
-            {/* Use this if on phone
-            <p className="mt-3 ellipsis">{col.description}</p> */}
-          </Col>
-        ))}
-      </Row>
+
+  <div style={{
+    display: "grid",
+    gridTemplateColumns: "1fr 1fr",
+    gap: "3rem"
+  }}
+  >
+    <div className='style drake-border' style={{
+      display: "grid",
+      gridTemplateColumns: "1fr 1fr",
+    }}>
+      <div className='style-image'>
+        <img src='/quests.png' style={{width:'400px', margin: '0.25rem'}} />
+      </div>
+      <div className='style-text'>
+        <h2 className='vertical'>Current Quests</h2>
+      </div>
+    </div>
+    <div className='info'>
+    {questData.map((col, i) => (
+      <div>
+        <Link className="quest-link" key={col.id} href={'/quests/' + col.id}>
+          <h3>{col.title}</h3>
+        </Link>
+        <p className='px-3 py-2'>{col.subtitle}</p>
+        <br></br>
+      </div>
+    ))}
+    </div> 
+  </div>
     </>
   )
 }

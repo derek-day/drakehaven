@@ -10,31 +10,46 @@ import Link from 'next/link'
 import { useUser, withPageAuthRequired } from '@auth0/nextjs-auth0/client';
 import Loading from '../../components/Loading';
 
-export default function SpellList() {
-  const { user, isLoading } = useUser();
-  // const data = spellData.find((q) => q.id === user.id)
-  // console.log(data);
+  // const { user, isLoading } = useUser();
 
-  return (
-    <>
-      {isLoading && <Loading />}
-      {/* need to set user id to spell user id (edit spellData to have seperate user id's with their spells listed below) */}
-      {/* {user && ( */}
-      {user && spellData.find((q) => q.id === user.id) && (
+  // {isLoading && <Loading />}
+  // need to set user id to spell user id (edit spellData to have seperate user id's with their spells listed below)
+  // {user && spellData.find((q) => q.id === user.id) && (
+
+  export default function SpellList() {
+    return (
       <>
-        <Row className="d-flex justify-content-between" data-testid="content-items">
-          {spellData.map((col, i) => (
-          // {spellData.map((col, i) => (
-            <Col key={i} md={5} className="mb-4">
-                <Link key={col.id} href={'/spells/' + col.id}>
-                  <h2>{col.title}</h2>
-                </Link>
-            </Col>
-          ))}
-        </Row>
-        <h1>{user.id}</h1>
+  
+    <div style={{
+      display: "grid",
+      gridTemplateColumns: "1fr 1fr",
+      gap: "3rem"
+    }}
+    >
+      <div className='style drake-border' style={{
+        display: "grid",
+        gridTemplateColumns: "1fr 1fr",
+      }}>
+        <div className='style-image'>
+          <img src='/spells.png' style={{width:'400px', margin: '0.25rem'}} />
+        </div>
+        <div className='style-text'>
+          <h2 className='vertical'>Spells</h2>
+        </div>
+      </div>
+      <div className='info'>
+      {spellData.map((col, i) => (
+        <div>
+          <Link className="spell-link" key={col.id} href={'/spells/' + col.id}>
+            <h3>{col.title}</h3>
+          </Link>
+          <p className='px-3 py-2'>{col.subtitle}</p>
+          <br></br>
+        </div>
+      ))}
+      </div> 
+    </div>
       </>
-      )}
-      </>
-  )
-}
+    )
+  }
+  

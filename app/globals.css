@@ -68,12 +68,13 @@ p code {
   font-family: "Ghibli";
   letter-spacing: 0.05rem;
   font-size: 1.1rem !important;
+  font-size: 1rem !important;
 }
 
 .nav-link:hover {
   text-decoration: underline !important;
-  text-decoration-thickness: 0.8px !important;
-  text-underline-offset: 10px;
+  text-decoration-thickness: 0.7px !important;
+  text-underline-offset: 9px;
 }
 
 .drake-border {
@@ -188,31 +189,85 @@ h6 {
 
 .title {
   background: #2D0C0C;
-  background: linear-gradient(to top, #2D0C0C 5%, #a53030 40%, #fdd552 100%);
+  background: linear-gradient(to top, #2D0C0C 5%, #e03222 40%, #fdd552 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   filter: drop-shadow(4px 2px #444);
+  font-size: 6rem;
 }
 
-.title::before {
-  /* text-shadow: 1px 1px 1px #fff, 1px 1px 10px #ccc;
-
-  background: none;
-  border: 1px solid #4C4949;
-  content: "";
+.vertical {
+  writing-mode: rl;
+  transform: rotate(-90deg);
+  white-space: nowrap;
   display: block;
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  right: 5px;
-  bottom: 5px;
-  pointer-events: none; */
-
+  bottom: 0;
+  color: #e03222;
+  font-family: 'Ghibli';
+  letter-spacing: 0.05rem;
+  font-size: 4rem;
+  font-weight: 100;
+  /* width: fit-content; */
+  position: relative;
+  top: 10rem;
 }
 
+.quest-link {
+  font-family: 'Ghibli';
+  color: var(--light);
+  text-decoration: underline !important;
+  text-decoration-thickness: 0.7px !important;
+  text-underline-offset: 9px;
+  text-decoration-color: white !important;
+}
+
+.quest-link h3 {
+  font-weight: 100;
+}
+
+.quest-link:hover {
+  text-decoration: underline !important;
+  text-decoration-thickness: 0.7px !important;
+  text-underline-offset: 9px;
+  text-decoration-color: white !important;
+}
+
+.spell-link {
+  font-family: 'Ghibli';
+  color: var(--light);
+  text-decoration: underline !important;
+  text-decoration-thickness: 0.7px !important;
+  text-underline-offset: 9px;
+  text-decoration-color: white !important;
+}
+
+.spell-link h3 {
+  font-weight: 100;
+}
+
+.spell-link:hover {
+  text-decoration: underline !important;
+  text-decoration-thickness: 0.7px !important;
+  text-underline-offset: 9px;
+  text-decoration-color: white !important;
+}
+
+
+.style-text {
+  align-content: center;
+  width: 8rem;
+}
+
+.info {
+  align-content: center;
+}
 
 @media (max-width: 768px) {
   .hero-image {
     content: url('/heromob.png');
   }  
+
+  .title {
+    font-size: 3rem;
+  }
 }
