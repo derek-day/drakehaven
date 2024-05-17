@@ -20,36 +20,54 @@ import Loading from '../../components/Loading';
     return (
       <>
   
-    <div style={{
-      display: "grid",
-      gridTemplateColumns: "1fr 1fr",
-      gap: "3rem"
-    }}
-    >
-      <div className='style drake-border' style={{
-        display: "grid",
-        gridTemplateColumns: "1fr 1fr",
-      }}>
-        <div className='style-image'>
-          <img src='/spells.png' style={{width:'400px', margin: '0.25rem'}} />
+        <div style={{
+          display: "grid",
+          gridTemplateColumns: "1fr 1fr",
+          gap: "3rem"
+        }}
+        >
+            {/* <div className='info'>
+              {spellData.map((col, i) => (
+                <div>
+                  <Link className="spell-link" key={col.id} href={'/spells/' + col.id}>
+                    <h3>{col.title}</h3>
+                  </Link>
+                  <p className='px-3 py-2'>{col.subtitle}</p>
+                  <br></br>
+                </div>
+              ))}
+            </div> */}
+
+
+          <div className='style drake-border' style={{
+            display: "grid",
+            gridTemplateColumns: "1fr 1fr",
+          }}>
+
+            <div className='style-image'>
+              <img src='/spells.png' style={{width:'400px', margin: '0.25rem'}} />
+            </div>
+
+            <div className='style-text'>
+              <h2 className='vertical-spell'>Spells</h2>
+            </div>
+
+          </div>
+
+          <div className='info'>
+              {spellData.map((col, i) => (
+                <div>
+                  <Link className="spell-link" key={col.id} href={'/spells/' + col.id}>
+                    <h3>{col.title}</h3>
+                  </Link>
+                  <p className='px-3 py-2'>{col.subtitle}</p>
+                  <br></br>
+                </div>
+              ))}
+            </div>
+
         </div>
-        <div className='style-text'>
-          <h2 className='vertical'>Spells</h2>
-        </div>
-      </div>
-      <div className='info'>
-      {spellData.map((col, i) => (
-        <div>
-          <Link className="spell-link" key={col.id} href={'/spells/' + col.id}>
-            <h3>{col.title}</h3>
-          </Link>
-          <p className='px-3 py-2'>{col.subtitle}</p>
-          <br></br>
-        </div>
-      ))}
-      </div> 
-    </div>
-      </>
+    </>
     )
   }
   

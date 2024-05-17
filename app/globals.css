@@ -212,6 +212,23 @@ h6 {
   top: 10rem;
 }
 
+.vertical-spell {
+  writing-mode: rl;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  display: block;
+  bottom: 0;
+  color: #e03222;
+  font-family: 'Ghibli';
+  letter-spacing: 0.05rem;
+  font-size: 4rem;
+  font-weight: 100;
+  /* width: fit-content; */
+  position: relative;
+  top: 2rem;
+}
+
+
 .quest-link {
   font-family: 'Ghibli';
   color: var(--light);
@@ -251,7 +268,6 @@ h6 {
   text-underline-offset: 9px;
   text-decoration-color: white !important;
 }
-
 
 .style-text {
   align-content: center;

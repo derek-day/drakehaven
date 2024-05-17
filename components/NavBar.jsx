@@ -40,7 +40,7 @@ const NavBar = () => {
               </NavItem> */}
               <NavItem>
                 <PageLink href="/" className="nav-link" testId="navbar-home">
-                  <img className="drakelogo" src="/logo.png" width={80} height={80} />
+                  <img className="drakelogo" src="/logo2.png" width={80} height={80} />
                 </PageLink>
               </NavItem>
 
