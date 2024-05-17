@@ -65,13 +65,15 @@ p code {
 
 .nav-link {
   color: var(--light) !important;
-  font-family: "Francisco-Regular";
+  font-family: "Ghibli";
   letter-spacing: 0.05rem;
+  font-size: 1.1rem !important;
 }
 
 .nav-link:hover {
   text-decoration: underline !important;
-  text-underline-offset: 8px;
+  text-decoration-thickness: 0.8px !important;
+  text-underline-offset: 10px;
 }
 
 .drake-border {
@@ -118,7 +120,16 @@ p code {
   src: url('/fonts/House.otf') format("opentype");
   font-display: swap;
 }
-
+@font-face {
+  font-family: "Ghibli";
+  src: url('/fonts/Ghibli.otf') format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ghibli-Bold";
+  src: url('/fonts/Ghibli-Bold.otf') format("opentype");
+  font-display: swap;
+}
 @font-face {
   font-family: "Francisco";
   src: url('/fonts/Francisco.ttf') format("truetype");
@@ -177,10 +188,28 @@ h6 {
 
 .title {
   background: #2D0C0C;
-  background: linear-gradient(to top, #2D0C0C 5%, #B63232 40%, #fdd552 100%);
+  background: linear-gradient(to top, #2D0C0C 5%, #a53030 40%, #fdd552 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  filter: drop-shadow(4px 2px #444);
 }
+
+.title::before {
+  /* text-shadow: 1px 1px 1px #fff, 1px 1px 10px #ccc;
+
+  background: none;
+  border: 1px solid #4C4949;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  pointer-events: none; */
+
+}
+
 
 @media (max-width: 768px) {
   .hero-image {
