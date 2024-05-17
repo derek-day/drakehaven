@@ -48,6 +48,32 @@ p code {
   box-shadow: none !important;
 }
 
+.navbar-dark .navbar-toggler {
+  /* border-color: none !important; */
+  border-color: rgba(255,255,255,0) !important;
+}
+
+.navbar-toggler {
+  margin-right: 0 !important;
+  float: right !important;
+  border-color: rgba(255,255,255,0) !important;
+}
+
+.nav-item {
+  align-content: center;
+}
+
+.nav-link {
+  color: var(--light) !important;
+  font-family: "Francisco-Regular";
+  letter-spacing: 0.05rem;
+}
+
+.nav-link:hover {
+  text-decoration: underline !important;
+  text-underline-offset: 8px;
+}
+
 .drake-border {
   /* background-color: #ccc; */
   border: 2px solid #5e5a5a;
@@ -73,10 +99,44 @@ p code {
 }
 
 @font-face {
-  font-family: "Francisco";
-  /* src: url('../public/fonts/francisco.ttf') format("truetype"); */
-  src: url('/fonts/francisco.ttf') format("truetype");
+  font-family: "Draconis";
+  src: url('/fonts/Draconis.ttf') format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Draconis";
+  src: url('/fonts/Draconis-Bold.ttf') format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "HouseDeco";
+  src: url('/fonts/HouseDeco.otf') format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "House";
+  src: url('/fonts/House.otf') format("opentype");
+  font-display: swap;
+}
 
+@font-face {
+  font-family: "Francisco";
+  src: url('/fonts/Francisco.ttf') format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Francisco-Regular";
+  src: url('/fonts/Francisco-Regular.ttf') format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Francisco-Bold";
+  src: url('/fonts/Francisco-Bold.ttf') format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "DragonHunter";
+  src: url('/fonts/DragonHunter.otf') format("opentype");
   font-display: swap;
 }
 
@@ -113,4 +173,17 @@ h6 {
 .drakelogo:hover {
   transform: scale3d(1.1, 1.1, 1.1);
   transition: transform 250ms cubic-bezier(0,0,.03,1) .05s;
+}
+
+.title {
+  background: #2D0C0C;
+  background: linear-gradient(to top, #2D0C0C 5%, #B63232 40%, #fdd552 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 768px) {
+  .hero-image {
+    content: url('/heromob.png');
+  }  
 }
