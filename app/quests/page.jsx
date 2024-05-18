@@ -12,18 +12,18 @@ export default function QuestList() {
   return (
     <>
 
-  <div style={{
+  <div className="testgrid" style={{
     display: "grid",
     gridTemplateColumns: "1fr 1fr",
     gap: "3rem"
   }}
   >
-    <div className='style drake-border' style={{
+    <div className='style drake-border stylegrid' style={{
       display: "grid",
       gridTemplateColumns: "1fr 1fr",
     }}>
       <div className='style-image'>
-        <img src='/quests.png' style={{width:'400px', margin: '0.25rem'}} />
+        <img className="style-image-image" src='/quests.png' style={{width:'400px', margin: '0.25rem'}} />
       </div>
       <div className='style-text'>
         <h2 className='vertical'>Current Quests</h2>

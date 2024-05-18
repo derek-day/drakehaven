@@ -300,10 +300,58 @@ h6 {
 
 @media (max-width: 768px) {
   .hero-image {
-    content: url('/heromob.png');
+    content: url('/heromob1.png');
   }  
 
   .title {
     font-size: 3rem;
+  }
+
+  .testgrid {
+    display: block !important;
+  }
+
+  .stylegrid {
+    display: block !important;
+    margin-bottom: 4rem;
+  }
+
+  .vertical {
+    transform: rotate(0deg);
+    top: 0;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    margin-bottom: 0 !important;
+  }
+
+  .vertical-spell {
+    transform: rotate(0deg);
+    top: 0;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    margin-bottom: 0 !important;
+  }
+
+  .style-text {
+    text-align: center;
+    width: 100% !important;
+  }
+
+  .style-image-image {
+    width: 325px !important;
+  }
+
+  .quest-link h3 {
+    font-size: 1.5rem;
+    line-height: inherit;
+  }
+
+  .spell-link h3 {
+    font-size: 1.5rem;
+    line-height: inherit;
+  }
+
+  .info {
+    padding: 0 1rem;
   }
 }
