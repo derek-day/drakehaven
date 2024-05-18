@@ -263,6 +263,7 @@ h6 {
   color: #1C1819;
   margin: 1rem;
   background-image: url('/med.png');
+  font-size: 2rem;
 }
 
 .quest-desc {
@@ -306,6 +307,7 @@ h6 {
   color: #1C1819;
   margin: 1rem;
   background-image: url('/med.png');
+  font-size: 2rem;
 }
 
 .spell-list {
