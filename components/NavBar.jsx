@@ -56,11 +56,11 @@ const NavBar = () => {
                       Spells
                     </PageLink>
                   </NavItem>
-                  {/* <NavItem>
-                    <PageLink href="/external" className="nav-link" testId="navbar-external">
+                  <NavItem>
+                    <PageLink href="/map" className="nav-link" testId="navbar-external">
                       Map
                     </PageLink>
-                  </NavItem> */}
+                  </NavItem>
                 </>
               )}
             </Nav>
@@ -95,7 +95,7 @@ const NavBar = () => {
                     </DropdownItem>
                     <DropdownItem className="dropdown-profile" tag="span">
                       <PageLink href="/profile" icon="user" testId="navbar-profile-desktop">
-                        Profile
+                        PROFILE
                       </PageLink>
                     </DropdownItem>
                     <DropdownItem id="qsLogoutBtn">
