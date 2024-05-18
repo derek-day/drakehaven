@@ -65,39 +65,51 @@ const NavBar = () => {
                     className="btn btn-primary btn-margin"
                     tabIndex={0}
                     testId="navbar-login-desktop">
-                    LOGIN
+                    Log in
                   </AnchorLink>
                 </NavItem>
               )}
               {user && (
-                <UncontrolledDropdown nav inNavbar data-testid="navbar-menu-desktop">
-                  <DropdownToggle nav caret id="profileDropDown">
-                    <img
-                      src={user.picture}
-                      alt="Profile"
-                      className="nav-user-profile rounded-circle"
-                      width="50"
-                      height="50"
-                      decode="async"
-                      data-testid="navbar-picture-desktop"
-                    />
-                  </DropdownToggle>
-                  <DropdownMenu>
-                    <DropdownItem header data-testid="navbar-user-desktop">
-                      {user.name}
-                    </DropdownItem>
-                    <DropdownItem className="dropdown-profile" tag="span">
-                      <PageLink href="/profile" icon="user" testId="navbar-profile-desktop">
-                        PROFILE
-                      </PageLink>
-                    </DropdownItem>
-                    <DropdownItem id="qsLogoutBtn">
-                      <AnchorLink href="/api/auth/logout" icon="power-off" testId="navbar-logout-desktop">
-                        LOGOUT
-                      </AnchorLink>
-                    </DropdownItem>
-                  </DropdownMenu>
-                </UncontrolledDropdown>
+
+                <NavItem id="qsLogoutBtn">
+                <AnchorLink
+                  href="/api/auth/logout"
+                  className= "btn btn-primary btn-margin mt-2"
+                  icon="power-off"
+                  testId="navbar-logout-mobile">
+                  Log out
+                </AnchorLink>
+                </NavItem>
+
+
+                // <UncontrolledDropdown nav inNavbar data-testid="navbar-menu-desktop">
+                //   <DropdownToggle nav caret id="profileDropDown">
+                //     <img
+                //       src={user.picture}
+                //       alt="Profile"
+                //       className="nav-user-profile rounded-circle"
+                //       width="50"
+                //       height="50"
+                //       decode="async"
+                //       data-testid="navbar-picture-desktop"
+                //     />
+                //   </DropdownToggle>
+                //   <DropdownMenu>
+                //     <DropdownItem header data-testid="navbar-user-desktop">
+                //       {user.name}
+                //     </DropdownItem>
+                //     <DropdownItem className="dropdown-profile" tag="span">
+                //       <PageLink href="/profile" icon="user" testId="navbar-profile-desktop">
+                //         Profile
+                //       </PageLink>
+                //     </DropdownItem>
+                //     <DropdownItem id="qsLogoutBtn">
+                //       <AnchorLink href="/api/auth/logout" icon="power-off" testId="navbar-logout-desktop">
+                //         Log out
+                //       </AnchorLink>
+                //     </DropdownItem>
+                //   </DropdownMenu>
+                // </UncontrolledDropdown>
               )}
             </Nav>
             {!isLoading && !user && (
@@ -107,7 +119,7 @@ const NavBar = () => {
                   className="btn btn-primary btn-block"
                   tabIndex={0}
                   testId="navbar-login-mobile">
-                  LOGIN
+                  Log in
                 </AnchorLink>
               </Nav>
             )}
@@ -117,7 +129,17 @@ const NavBar = () => {
                 className="d-md-none justify-content-between"
                 navbar
                 data-testid="navbar-menu-mobile">
-                <NavItem>
+                <NavItem id="qsLogoutBtn">
+                  <AnchorLink
+                    href="/api/auth/logout"
+                    className= "btn btn-primary btn-margin mt-2"
+                    icon="power-off"
+                    testId="navbar-logout-mobile">
+                    Log out
+                  </AnchorLink>
+                </NavItem>
+
+                {/* <NavItem>
                   <span className="user-info">
                     <img
                       src={user.picture}
@@ -146,7 +168,8 @@ const NavBar = () => {
                     testId="navbar-logout-mobile">
                     LOGOUT
                   </AnchorLink>
-                </NavItem>
+                </NavItem> */}
+
               </Nav>
             )}
           </Collapse>

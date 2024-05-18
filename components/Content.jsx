@@ -19,7 +19,7 @@ const Content = () => {
       placeItems: "center"
     }}
     >
-      <h2 className='title mt-2 mb-5' style={{fontFamily:'House', letterSpacing:'0.3rem' }}>Drakehaven</h2>
+      <h2 className='title mt-2 mb-4' style={{fontFamily:'House', letterSpacing:'0.3rem' }}>Drakehaven</h2>
 
       {user && (
       <>
@@ -35,7 +35,7 @@ const Content = () => {
       </>
       )}
 
-      <img className='hero-image' src='/herool2.png' style={{width: "100%", filter: "saturate(1)", borderRadius: '1rem'}} />
+      <img className='hero-image' src='/herool2.png' style={{width: "100%", filter: "saturate(1)"}} />
     </div>
   );
 };
