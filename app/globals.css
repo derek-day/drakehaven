@@ -162,20 +162,25 @@ h6 {
 
 .btn-primary {
   background-color: #1C1819 !important;
-  border: 1px solid #f8f9fa !important;
+  background-color: #8D190E !important;
+  border: 1px solid #8D190E !important;
+  border: none !important;
   border-radius: 1rem !important;
   transition: transform 250ms cubic-bezier(0,0,.03,1) .05s;
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(1px);
   background-color: #f8f9fa;
   color: #000;
+  font-family: "Ghibli";
+  letter-spacing: 0.05rem;
+  font-weight: 700;
 }
 
 .btn-primary:hover {
   transform: scale3d(1.05, 1.05, 1.05);
   transition: transform 250ms cubic-bezier(0,0,.03,1) .05s;
   /* box-shadow: 0 0 50px -25px #f8f9fa !important; */
-  box-shadow: 0 0 15px -5px #f8f9fa !important;
+  box-shadow: 0 0 10px 0px #e03222 !important;
 }
 
 .drakelogo {
@@ -298,7 +303,35 @@ h6 {
   align-content: center;
 }
 
+.style-mob {
+  display: none;
+}
+
 @media (max-width: 768px) {
+.style-image-image {
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, transparent 85%);
+  content: unset;
+}
+
+.style-image {
+  display: none;
+}
+
+.style-text {
+  display: none;
+}
+
+.style-mob {
+  display: block;
+}
+
+.navbar-nav:last-child {
+  background: none !important;
+  box-shadow: none !important;
+  margin: 0.5em 0 0 0 !important;
+  padding: 0 2.5rem 2em !important;
+}
+
   .hero-image {
     content: url('/heromob1.png');
   }  
@@ -322,6 +355,16 @@ h6 {
     font-size: 2.5rem;
     padding: 1rem 0;
     margin-bottom: 0 !important;
+    padding: 0;
+    position: absolute;
+    top: 32rem;
+    bottom: auto !important;
+    /* background-color: transparent !important; */
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 285px;
   }
 
   .vertical-spell {
@@ -330,6 +373,16 @@ h6 {
     font-size: 2.5rem;
     padding: 1rem 0;
     margin-bottom: 0 !important;
+    padding: 0;
+    position: absolute;
+    top: 32rem;
+    bottom: auto !important;
+    /* background-color: transparent !important; */
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 100px;
   }
 
   .style-text {

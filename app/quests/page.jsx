@@ -28,6 +28,12 @@ export default function QuestList() {
       <div className='style-text'>
         <h2 className='vertical'>Current Quests</h2>
       </div>
+
+      <div className='style-mob'>
+        <img className='style-image-image' src='/quests.png' style={{width:'400px', margin: '0.25rem'}} />
+        <h2 className='vertical'>Current Quests</h2>
+      </div>
+
     </div>
     <div className='info'>
     {questData.map((col, i) => (

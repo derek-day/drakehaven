@@ -52,6 +52,11 @@ import Loading from '../../components/Loading';
               <h2 className='vertical-spell'>Spells</h2>
             </div>
 
+            <div className='style-mob'>
+              <img className='style-image-image' src='/spells.png' style={{width:'400px', margin: '0.25rem'}} />
+              <h2 className='vertical-spell'>Spells</h2>
+            </div>
+
           </div>
 
           <div className='info'>
