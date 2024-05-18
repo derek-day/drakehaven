@@ -78,9 +78,7 @@ p code {
 }
 
 .drake-border {
-  /* background-color: #ccc; */
   border: 2px solid #5e5a5a;
-  /* border-radius: 0.5rem; */
   padding: 0.8em;
   width: 100%;
   position: relative;
@@ -240,6 +238,8 @@ h6 {
   text-decoration-thickness: 0.7px !important;
   text-underline-offset: 9px;
   text-decoration-color: white !important;
+  width: fit-content;
+  display: block;
 }
 
 .quest-link h3 {
@@ -253,14 +253,24 @@ h6 {
   text-decoration-color: white !important;
 }
 
+.quest-link h3:hover {
+  color: #fdd552 !important;
+}
+
 .quest-title {
   font-family: "Ghibli";
   font-weight: 400;
+  color: #1C1819;
+  margin: 1rem;
+  background-image: url('/med.png');
 }
 
 .quest-desc {
   font-family: "Ghibli";
   font-weight: 100;
+  color: #1C1819;
+  margin: 1rem;
+  background-image: url('/med.png');
 }
 
 .spell-link {
@@ -270,6 +280,8 @@ h6 {
   text-decoration-thickness: 0.7px !important;
   text-underline-offset: 9px;
   text-decoration-color: white !important;
+  width: fit-content;
+  display: block;
 }
 
 .spell-link h3 {
@@ -283,15 +295,33 @@ h6 {
   text-decoration-color: white !important;
 }
 
+.spell-link h3:hover {
+  color: #fdd552 !important;
+}
+
 .spell-title {
   font-family: "Ghibli";
   font-weight: 400;
+  background-color: white !important;
+  color: #1C1819;
+  margin: 1rem;
+  background-image: url('/med.png');
+}
+
+.spell-list {
+  background-color: white !important;
+  margin: 1rem;
+  background-image: url('/med.png');
 }
 
 .spell-list li {
   color: var(--light);
+  color: #1C1819;
   font-family: "Ghibli";
   font-weight: 100;
+  background-color: white !important;
+  margin: 0.25rem;
+  background-image: url('/med.png');
 }
 
 .style-text {
@@ -305,6 +335,10 @@ h6 {
 
 .style-mob {
   display: none;
+}
+
+.style-image-image {
+  /* mask-image: linear-gradient(to right,rgba(0,0,0,1) 75%,transparent 100%); */
 }
 
 @media (max-width: 768px) {

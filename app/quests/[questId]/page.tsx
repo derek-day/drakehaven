@@ -16,9 +16,14 @@ export default function QuestDetails({
 
   return (
     <>
-      <h1 className='quest-title'>{quest.title}</h1>
-      <p className='quest-desc px-3 py-2'>{quest.description}</p>
-      {/* <img src={quest.image} width={600} height={500} /> */}
+      <div className='drake-border' style={{
+        backgroundColor: "#fff !important", backgroundImage: "url('/med.png')", width: '80%'
+      }}>
+        <h1 className='quest-title'>{quest.title}</h1>
+        <p className='quest-desc px-3 py-2'>{quest.description}</p>
+        <p className='quest-desc px-3'>Accepted from: {quest.given}</p>
+        <p className='quest-desc px-3'>Location: {quest.location}</p>
+      </div>
     </>
   )
 }

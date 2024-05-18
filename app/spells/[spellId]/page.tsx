@@ -16,16 +16,20 @@ export default function SpellDetails({
 
   return (
     <>
-      <h1 className='spell-title'>{spell.title}</h1>
-      <ul className='spell-list '>
-        <li>Level: {spell.level}</li>
-        <li>School: {spell.school}</li>
-        <li>Casting Time: {spell.casttime}</li>
-        <li>Range: {spell.range}</li>
-        <li>Components: {spell.components}</li>
-        <li>Duration: {spell.duration}</li>
-        <li>Description: {spell.description}</li>
-      </ul>
+      <div className='drake-border' style={{
+        backgroundColor: "#fff !important", backgroundImage: "url('/med.png')", width: '80%'
+      }}>
+        <h1 className='spell-title'>{spell.title}</h1>
+        <ul className='spell-list'>
+          <li>Level: {spell.level}</li>
+          <li>School: {spell.school}</li>
+          <li>Casting Time: {spell.casttime}</li>
+          <li>Range: {spell.range}</li>
+          <li>Components: {spell.components}</li>
+          <li>Duration: {spell.duration}</li>
+          <li>Description: {spell.description}</li>
+        </ul>
+      </div>
     </>
   )
 }
