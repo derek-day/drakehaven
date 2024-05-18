@@ -21,7 +21,7 @@ export default function QuestDetails({
       }}>
         <h1 className='quest-title'>{quest.title}</h1>
         <p className='quest-desc px-3 py-2'>{quest.description}</p>
-        <p className='quest-desc px-3'><span className='bold'>Accepted from:</span> {quest.given}</p>
+        <p className='quest-desc px-3'><span className='bold'>Received from:</span> {quest.given}</p>
         <p className='quest-desc px-3'><span className='bold'>Location:</span> {quest.location}</p>
       </div>
     </>

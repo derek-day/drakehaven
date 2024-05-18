@@ -28,16 +28,9 @@ const NavBar = () => {
     <div className="nav-container" data-testid="navbar">
       <Navbar color="#1C1819" dark expand="md">
         <Container>
-          {/* <NavbarBrand className="logo" /> */}
-          {/* <img src="/logo.png" width={80} height={80} /> */}
           <NavbarToggler onClick={toggle} data-testid="navbar-toggle" />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar data-testid="navbar-items">
-              {/* <NavItem>
-                <PageLink href="/" className="nav-link" testId="navbar-home">
-                  Home
-                </PageLink>
-              </NavItem> */}
               <NavItem>
                 <PageLink href="/" className="nav-link" testId="navbar-home">
                   <img className="drakelogo" src="/logo2.png" width={80} height={80} />
