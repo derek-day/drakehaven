@@ -21,13 +21,13 @@ export default function SpellDetails({
       }}>
         <h1 className='spell-title'>{spell.title}</h1>
         <ul className='spell-list'>
-          <li>Level: {spell.level}</li>
-          <li>School: {spell.school}</li>
-          <li>Casting Time: {spell.casttime}</li>
-          <li>Range: {spell.range}</li>
-          <li>Components: {spell.components}</li>
-          <li>Duration: {spell.duration}</li>
-          <li>Description: {spell.description}</li>
+          <li><span className='bold'>Level:</span> {spell.level}</li>
+          <li><span className='bold'>School:</span> {spell.school}</li>
+          <li><span className='bold'>Casting Time:</span> {spell.casttime}</li>
+          <li><span className='bold'>Range:</span> {spell.range}</li>
+          <li><span className='bold'>Components:</span> {spell.components}</li>
+          <li><span className='bold'>Duration:</span> {spell.duration}</li>
+          <li><span className='bold'>Description:</span> {spell.description}</li>
         </ul>
       </div>
     </>

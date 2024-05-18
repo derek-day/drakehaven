@@ -339,8 +339,9 @@ h6 {
   display: none;
 }
 
-.style-image-image {
-  /* mask-image: linear-gradient(to right,rgba(0,0,0,1) 75%,transparent 100%); */
+.bold {
+  font-weight: 700;
+  background-image: url('/med.png');
 }
 
 @media (max-width: 768px) {
