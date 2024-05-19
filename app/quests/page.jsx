@@ -70,7 +70,7 @@ export default function QuestList() {
         <Link className="quest-link" key={col.id} href={'/quests/' + col.id}>
           <h3>{col.title}</h3>
         </Link>
-        <p className='px-3 py-2'>{col.subtitle}</p>
+        <p className='px-3 py-2' style={{fontWeight: '100', fontFamily: 'Ghibli'}}>{col.subtitle}</p>
         <br></br>
       </div>
     ))}
