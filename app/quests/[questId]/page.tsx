@@ -1,4 +1,6 @@
-import React from 'react';
+'use client';
+
+import React, {useEffect} from 'react';
 import { withPageAuthRequired } from '@auth0/nextjs-auth0/client';
 
 import questData from '../questData';
@@ -12,7 +14,11 @@ export default function QuestDetails({
 }) {
   const quest = questData.find((q) => q.id === params.questId);
 
-  console.log(quest.image)
+  const title = quest.title
+
+  useEffect(() => {
+    document.title = title + " | Drakehaven";
+  }, []);
 
   return (
     <>

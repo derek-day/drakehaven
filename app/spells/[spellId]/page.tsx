@@ -1,4 +1,6 @@
-import React from 'react';
+'use client';
+
+import React, {useEffect} from 'react';
 import { withPageAuthRequired } from '@auth0/nextjs-auth0/client';
 
 import spellData from '../spellData';
@@ -13,6 +15,12 @@ export default function SpellDetails({
   params: { spellId: string };
 }) {
   const spell = spellData.find((q) => q.id === params.spellId);
+
+  const title = spell.title
+
+  useEffect(() => {
+    document.title = title + " | Drakehaven";
+  }, []);
 
   return (
     <>

@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, {useEffect} from 'react';
 
 import spellData from './spellData';
 
@@ -17,6 +17,10 @@ import Loading from '../../components/Loading';
   // {user && spellData.find((q) => q.id === user.id) && (
 
   export default function SpellList() {
+    useEffect(() => {
+      document.title = 'Spells | Drakehaven';
+    }, []);
+  
     return (
       <>
   

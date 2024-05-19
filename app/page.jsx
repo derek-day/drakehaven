@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, {useEffect} from 'react';
 
 import Hero from '../components/Hero';
 import Content from '../components/Content';
@@ -10,6 +10,10 @@ import Map from '../components/Map';
 
 
 export default function Index() {
+  useEffect(() => {
+    document.title = 'Drakehaven';
+  }, []);
+
   return (
     <>
       {/* <Hero /> */}

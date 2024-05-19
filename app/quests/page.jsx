@@ -1,4 +1,6 @@
-import React from 'react';
+'use client';
+
+import React, {useEffect} from 'react';
 import { withPageAuthRequired } from '@auth0/nextjs-auth0/client';
 
 import questData from './questData';
@@ -9,6 +11,10 @@ import Link from 'next/link'
 
 
 export default function QuestList() {
+  useEffect(() => {
+    document.title = 'Quests | Drakehaven';
+  }, []);
+
   return (
     <>
 

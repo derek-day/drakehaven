@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, {useEffect} from 'react';
 
 import spellData from './spellData';
 
@@ -11,6 +11,10 @@ import { useUser, withPageAuthRequired } from '@auth0/nextjs-auth0/client';
 import Loading from '../../components/Loading';
 
   export default function Map() {
+    useEffect(() => {
+      document.title = 'Map | Drakehaven';
+    }, []);
+
     return (
       <>
       <h1 className='mb-5' style={{fontFamily: "Ghibli", textAlign: 'center', color: '#e03222'}}>Map</h1>
