@@ -66,7 +66,7 @@ import Loading from '../../components/Loading';
           <div className='info'>
               {spellData.map((col, i) => (
                 <div>
-                  <Link className="spell-link" key={col.id} href={'/spells/' + col.id} style={{fontWeight: '600'}}>
+                  <Link className="spell-link" key={col.id} href={'/spells/' + col.id}>
                     <h3>{col.title}</h3>
                   </Link>
                   <p className='px-3 py-2' style={{fontFamily: 'Ghibli', fontWeight: '100'}}>{col.subtitle}</p>
