@@ -6,16 +6,6 @@ body {
   background-image: url("/black-felt.png");
 }
 
-* {
-  /* background-color: #1C1819 !important;
-  background-image: url("/dark-matter.png");
-  background-image: url("/black-felt.png"); */
-}
-
-html {
-  
-}
-
 .navbar {
   background-color: #1C1819 !important;
   background-image: url("/dark-matter.png");
@@ -215,6 +205,7 @@ a:hover {
   background: #2D0C0C;
   background: linear-gradient(to top, #2D0C0C 5%, #e03222 40%, #fdd552 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   filter: drop-shadow(4px 2px #444);
   font-size: 6rem;
