@@ -19,7 +19,7 @@ const Content = () => {
       placeItems: "center"
     }}
     >
-      <h2 className='title mt-2 mb-4' style={{fontFamily:'House', letterSpacing:'0.3rem' }}>Drakehaven</h2>
+      <h2 className='title mt-2 mb-4' style={{fontFamily:'House', letterSpacing:'0.18rem' }}>Drakehaven</h2>
 
       {user && (
       <>
