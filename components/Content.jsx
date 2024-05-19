@@ -35,7 +35,9 @@ const Content = () => {
       </>
       )}
 
-      <img className='hero-image' src='/herool2.png' style={{width: "100%", filter: "saturate(1)"}} />
+      {/* <img className='hero-image' src='/herool2.png' style={{width: "100%", filter: "saturate(1)"}} /> */}
+      <img className='hero-image' src='/heroold4.png' style={{width: "100%", filter: "saturate(1)"}} />
+
     </div>
   );
 };

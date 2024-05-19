@@ -49,7 +49,7 @@ import Loading from '../../components/Loading';
           }}>
 
             <div className='style-image'>
-              <img className='style-image-image' src='/spells.png' style={{width:'400px', margin: '0.25rem'}} />
+              <img className='style-image-image' src='/spells1.png' style={{width:'400px', margin: '0.25rem'}} />
             </div>
 
             <div className='style-text'>
@@ -57,7 +57,7 @@ import Loading from '../../components/Loading';
             </div>
 
             <div className='style-mob'>
-              <img className='style-image-image' src='/spells.png' style={{width:'400px', margin: '0.25rem'}} />
+              <img className='style-image-image' src='/spells1.png' style={{width:'400px', margin: '0.25rem'}} />
               <h2 className='vertical-spell'>Spells</h2>
             </div>
 

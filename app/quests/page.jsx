@@ -51,14 +51,15 @@ export default function QuestList() {
       gridTemplateColumns: "1fr 1fr",
     }}>
       <div className='style-image'>
-        <img className="style-image-image" src='/quests.png' style={{width:'400px', margin: '0.25rem'}} />
+        {/* <img className="style-image-image" src='/quests.png' style={{width:'400px', margin: '0.25rem'}} /> */}
+        <img className="style-image-image" src='/quests1.png' style={{width:'400px', margin: '0.25rem'}} />
       </div>
       <div className='style-text'>
         <h2 className='vertical'>Current Quests</h2>
       </div>
 
       <div className='style-mob'>
-        <img className='style-image-image' src='/quests.png' style={{width:'400px', margin: '0.25rem'}} />
+        <img className='style-image-image' src='/quests1.png' style={{width:'400px', margin: '0.25rem'}} />
         <h2 className='vertical'>Current Quests</h2>
       </div>
 
