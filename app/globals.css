@@ -373,7 +373,12 @@ a:hover {
   background-image: url('/med.png');
 }
 
-@media (max-width: 768px) {
+.stylegrid {
+  height: fit-content;
+}
+
+/* @media (max-width: 768px) { */
+@media (max-width: 900px) {
 .drake-border {
   width: 100% !important;
 }
@@ -393,6 +398,10 @@ a:hover {
 
 .style-mob {
   display: block;
+}
+
+.stylegrid {
+  max-width: fit-content;
 }
 
 .navbar-nav:last-child {
