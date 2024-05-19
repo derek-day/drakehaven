@@ -33,7 +33,11 @@ const NavBar = () => {
             <Nav className="mr-auto" navbar data-testid="navbar-items">
               <NavItem>
                 <PageLink href="/" className="nav-link" testId="navbar-home">
-                  <img className="drakelogo" src="/logo2.png" width={80} height={80} />
+                  {/* <img className="drakelogo" src="/logo2.png" width={80} height={80} /> */}
+                  <img className="drakelogo" src="/logo6.png" width={70} height={70} style={{
+                        /* box-shadow: 0px 0px 105px 45px rgba(45, 255, 196, 0.9); */
+                        filter: 'drop-shadow(0px 0px 12px rgba(255, 63, 68, 0.25))'
+                  }} />
                 </PageLink>
               </NavItem>
 
