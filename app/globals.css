@@ -229,10 +229,19 @@ a:hover {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  /* filter: drop-shadow(4px 2px #444); */
   filter: drop-shadow(0px 0px 12px rgba(255, 63, 68, 0.15)) drop-shadow(4px 2px #444);
+  filter: drop-shadow(0px 0px 12px rgba(255, 63, 68, 0.5)) drop-shadow(4px 2px #444) blur(0.5px);
   font-size: 6rem;
 }
+
+/* @keyframes chroab {
+  0% {
+    text-shadow: 0 0 #a50610, 0 0 #0c2aa8, 0 6px 0 transparent, 8px 0 0 transparent;
+  }
+  100% {
+    text-shadow: 0.06ex 0 #a50610, -0.06ex 0 #0c2aa8, 0 0.14ex 0 rgba(0,0,0,.8), 0.12ex 0 0 rgba(0,0,0,.8);
+  }
+} */
 
 .vertical {
   writing-mode: rl;
