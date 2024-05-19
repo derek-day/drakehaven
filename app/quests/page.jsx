@@ -1,7 +1,9 @@
 'use client';
 
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import { withPageAuthRequired } from '@auth0/nextjs-auth0/client';
+import { db } from '../firebase';
+import { getDocs, collection } from 'firebase/firestore';
 
 import questData from './questData';
 
@@ -11,6 +13,26 @@ import Link from 'next/link'
 
 
 export default function QuestList() {
+  const [questList, setQuestList] = useState([]);
+
+  const questsCollectionRef = collection(db, "quests");
+
+  useEffect (() => {
+    const getQuestList = async () => {
+      try {
+        const data = await getDocs(questsCollectionRef);
+        const filteredData = data.docs.map((doc) => ({
+          ...doc.data(), 
+          id: doc.id}));
+        console.log(filteredData);
+      } catch (err) {
+        console.error(err);
+      }
+    };
+
+    getQuestList();
+  }, []);
+
   useEffect(() => {
     document.title = 'Quests | Drakehaven';
   }, []);
