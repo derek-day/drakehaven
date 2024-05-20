@@ -19,12 +19,11 @@ const Content = () => {
       placeItems: "center"
     }}
     >
-      <h2 className='title mt-2 mb-4' style={{fontFamily:'House', letterSpacing:'0.18rem' }}>Drakehaven</h2>
+      <h2 className='title mt-2 mb-2' style={{fontFamily:'House', letterSpacing:'0.18rem' }}>Drakehaven</h2>
 
-      {user && (
+      {/* {user && (
       <>
-        <div className='nav-border mb-5' style={{
-          // backgroundColor: "#fff !important", backgroundImage: "url('/med.png')", width: '15rem'
+        <div className='nav-border mt-4 mb-2' style={{
           width: '15rem'
         }}>
           <ul className='nav-list' style={{listStyleType: 'none', margin: '0', padding: '0', textAlign: 'center'}}>
@@ -34,10 +33,10 @@ const Content = () => {
           </ul>
         </div>
       </>
-      )}
+      )} */}
 
-      {/* <img className='hero-image' src='/herool2.png' style={{width: "100%", filter: "saturate(1)"}} /> */}
-      <img className='hero-image' src='/heroold4.png' style={{width: "100%", filter: "saturate(1)"}} />
+      {/* <img className='hero-image' src='/heroold4.png' style={{width: "100%", filter: "saturate(1)"}} /> */}
+      <img className='hero-image' src='/hero.png' style={{mixBlendMode: "lighten"}} />
 
     </div>
   );
