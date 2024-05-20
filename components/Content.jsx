@@ -23,8 +23,9 @@ const Content = () => {
 
       {user && (
       <>
-        <div className='drake-border mb-5' style={{
-          backgroundColor: "#fff !important", backgroundImage: "url('/med.png')", width: '15rem'
+        <div className='nav-border mb-5' style={{
+          // backgroundColor: "#fff !important", backgroundImage: "url('/med.png')", width: '15rem'
+          width: '15rem'
         }}>
           <ul className='nav-list' style={{listStyleType: 'none', margin: '0', padding: '0', textAlign: 'center'}}>
             <li><PageLink href="/quests" className="">Quests</PageLink></li>
