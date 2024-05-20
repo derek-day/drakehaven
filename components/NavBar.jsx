@@ -71,7 +71,7 @@ const NavBar = () => {
                     className="btn btn-primary btn-margin"
                     tabIndex={0}
                     testId="navbar-login-desktop">
-                    Log in
+                    Log In
                   </AnchorLink>
                 </NavItem>
               )}
@@ -83,7 +83,7 @@ const NavBar = () => {
                   className= "btn btn-primary btn-margin mt-2"
                   icon="power-off"
                   testId="navbar-logout-mobile">
-                  Log out
+                  Log Out
                 </AnchorLink>
                 </NavItem>
 
@@ -125,7 +125,7 @@ const NavBar = () => {
                   className="btn btn-primary btn-block"
                   tabIndex={0}
                   testId="navbar-login-mobile">
-                  Log in
+                  Log In
                 </AnchorLink>
               </Nav>
             )}
@@ -141,7 +141,7 @@ const NavBar = () => {
                     className= "btn btn-primary btn-margin mt-2"
                     icon="power-off"
                     testId="navbar-logout-mobile">
-                    Log out
+                    Log Out
                   </AnchorLink>
                 </NavItem>
 

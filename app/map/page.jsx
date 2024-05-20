@@ -2,8 +2,6 @@
 
 import React, {useEffect} from 'react';
 
-import spellData from './spellData';
-
 import { Row, Col } from 'reactstrap';
 import Link from 'next/link'
 
