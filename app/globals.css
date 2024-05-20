@@ -160,6 +160,7 @@ p code {
   font-size: 1.1rem !important;
   font-size: 1rem !important;
   font-weight: 600 !important;
+  font-weight: 100 !important;
   /* filter: drop-shadow(0px 0px 12px rgba(255, 255, 255, 0.35)) blur(0.3px); */
   /* text-shadow: 0 0 12px rgba(255, 255, 255, 0.4); */
 }
@@ -176,16 +177,16 @@ p code {
   width: 100%;
   position: relative;
   margin: 0 auto;
-  border: 2px solid #e03222;
-  border: 2px solid #8D190E;
+  /* border: 2px solid #e03222;
+  border: 2px solid #8D190E; */
 
 }
 
 .drake-border::before {
   background: none;
   border: 1px solid #4C4949;
-  border: 1px solid #8D190E;
-  border: 1px solid #e03222;
+  /* border: 1px solid #8D190E;
+  border: 1px solid #e03222; */
 
   content: "";
   display: block;
@@ -297,7 +298,7 @@ p code {
   /* width: fit-content; */
   position: relative;
   top: 10rem;
-  text-shadow: 0 0 12px rgba(255, 63, 68, 0.5);
+  text-shadow: 0 0 12px rgba(255, 63, 68, 0.3);
 }
 
 .vertical-spell {
