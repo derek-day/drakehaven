@@ -52,7 +52,7 @@ export default function QuestList() {
     }}>
       <div className='style-image'>
         {/* <img className="style-image-image" src='/quests1.png' style={{width:'400px', margin: '0.25rem'}} /> */}
-        <img className="style-image-image" src='/questscrt.png' style={{width:'400px', margin: '0.25rem', mixBlendMode: "plus-lighter"}} />
+        <img className="style-image-image" src='/questscrt2.png' style={{width:'400px', margin: '0.25rem', mixBlendMode: "plus-lighter"}} />
 
       </div>
       <div className='style-text'>
@@ -61,7 +61,7 @@ export default function QuestList() {
 
       <div className='style-mob'>
         {/* <img className='style-image-image' src='/quests1.png' style={{width:'400px', margin: '0.25rem'}} /> */}
-        <img className="style-image-image" src='/questscrt.png' style={{width:'400px', margin: '0.25rem', mixBlendMode: "plus-lighter"}} />
+        <img className="style-image-image" src='/questscrt2.png' style={{width:'400px', margin: '0.25rem', mixBlendMode: "plus-lighter"}} />
 
         <h2 className='vertical'>Current Quests</h2>
       </div>

@@ -315,7 +315,7 @@ p code {
   /* width: fit-content; */
   position: relative;
   top: 2rem;
-  text-shadow: 0 0 12px rgba(255, 63, 68, 0.5);
+  text-shadow: 0 0 12px rgba(255, 63, 68, 0.3);
 }
 
 .quest-link {
