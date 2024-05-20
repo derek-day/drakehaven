@@ -37,9 +37,14 @@ const NavBar = () => {
                         filter: 'drop-shadow(0px 0px 12px rgba(255, 63, 68, 0.25))'
                   }} /> */}
 
-                  <img className="drakelogo" src="/logo8.png" width={60} height={60} style={{
+                  {/* <img className="drakelogo" src="/logo8.png" width={60} height={60} style={{
                         filter: 'drop-shadow(0px 0px 12px rgba(255, 63, 68, 0.25))'
+                  }} /> */}
+
+<                 img className="drakelogo" src="/logocrt.png" width={60} height={60} style={{
+                        mixBlendMode: 'lighten'
                   }} />
+
                 </PageLink>
               </NavItem>
 
