@@ -18,7 +18,7 @@ import Loading from '../../components/Loading';
     return (
       <>
       <h1 className='mb-5' style={{fontFamily: "Ghibli", textAlign: 'center', color: '#e03222'}}>Map</h1>
-      <img src="/maps/1.png" style={{  display: 'block', marginLeft: 'auto', marginRight: 'auto', width: '90%'}} />
+      <img src="/maps/1.png" style={{  display: 'block', marginLeft: 'auto', marginRight: 'auto', width: '90%', mixBlendMode: 'difference'}} />
     </>
     )
   }
