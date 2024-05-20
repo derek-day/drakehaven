@@ -25,7 +25,8 @@ export default function SpellDetails({
   return (
     <>
       <div className='drake-border' style={{
-        backgroundColor: "#fff !important", backgroundImage: "url('/med.png')", width: '80%'
+        // backgroundColor: "#fff !important", backgroundImage: "url('/med.png')", width: '80%'
+        width: '80%'
       }}>
         <h1 className='spell-title'>{spell.title}</h1>
         <ul className='spell-list'>

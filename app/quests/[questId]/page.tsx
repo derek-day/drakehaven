@@ -23,7 +23,8 @@ export default function QuestDetails({
   return (
     <>
       <div className='drake-border' style={{
-        backgroundColor: "#fff !important", backgroundImage: "url('/med.png')", width: '80%'
+        // backgroundColor: "#fff !important", backgroundImage: "url('/med.png')", width: '80%'
+        width: '80%'
       }}>
         <h1 className='quest-title'>{quest.title}</h1>
         <p className='quest-desc px-3 py-2'>{quest.description}</p>
