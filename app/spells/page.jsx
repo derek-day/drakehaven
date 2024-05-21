@@ -60,7 +60,7 @@ import Loading from '../../components/Loading';
 
             <div className='style-mob'>
               {/* <img className='style-image-image' src='/spells1.png' style={{width:'400px', margin: '0.25rem'}} /> */}
-              <img className='style-image-image' src='/spellscrt3.png' style={{width:'400px', margin: '0.25rem', mixBlendMode: 'plus-lighter'}} />
+              <img className='style-image-image' src='/spellscrt5.png' style={{width:'400px', margin: '0.25rem', mixBlendMode: 'plus-lighter'}} />
 
               <h2 className='vertical-spell'>Spells</h2>
             </div>
