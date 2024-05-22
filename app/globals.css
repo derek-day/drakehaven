@@ -257,6 +257,19 @@ p code {
   box-shadow: 0 0 10px 0px #e03222 !important;
 }
 
+.footer_img img {
+  transition: transform 250ms cubic-bezier(0,0,.03,1) .05s;
+  /* backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  filter: drop-shadow(0px 0px 12px rgba(255, 63, 68, 0.2)) blur(0.5px); */
+}
+
+.footer_img img:hover {
+  transform: scale3d(1.05, 1.05, 1.05);
+  transition: transform 250ms cubic-bezier(0,0,.03,1) .05s;
+  /* box-shadow: 0 0 10px 0px #e03222 !important; */
+}
+
 .drakelogo {
   transition: transform 250ms cubic-bezier(0,0,.03,1) .05s;
 }

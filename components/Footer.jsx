@@ -1,12 +1,11 @@
 import React from 'react';
 
 const Footer = () => (
-  <footer className="bg-light p-3 text-center" data-testid="footer">
-    <div className="logo" data-testid="footer-logo" />
-    <p data-testid="footer-text">
-      Sample project provided by <a href="https://auth0.com">Auth0</a>
-    </p>
-  </footer>
+  // <footer className="p-3 text-center" data-testid="footer">
+    <div className="p-3 text-right">
+      <a className="footer_img" target="_blank" rel="noopener noreferrer" href='https://www.youtube.com/@fudgedroll7145' ><img src='/fudged.png' style={{mixBlendMode:'lighten', width:'5rem'}} /></a>
+    </div>
+  // </footer>
 );
 
 export default Footer;

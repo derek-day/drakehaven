@@ -7,6 +7,7 @@ import Content from '../components/Content';
 import Quests from '../components/Quests';
 import Spells from '../components/Spells';
 import Map from '../components/Map';
+import Footer from '../components/Footer';
 
 
 export default function Index() {
@@ -23,6 +24,7 @@ export default function Index() {
       <Spells />
       <hr />
       <Map /> */}
+      <Footer />
     </>
   );
 }
