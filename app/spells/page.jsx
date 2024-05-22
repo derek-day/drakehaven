@@ -4,24 +4,14 @@ import React, {useEffect, useState} from 'react';
 import { db } from '../firebase';
 import { getDocs, collection, query, where } from 'firebase/firestore';
 
-
 import spellData from './spellData';
 
-import { Row, Col } from 'reactstrap';
 import Link from 'next/link'
 
 import { useUser, withPageAuthRequired } from '@auth0/nextjs-auth0/client';
 import Loading from '../../components/Loading';
 
 import Footer from '../../components/Footer';
-
-  // const { user, isLoading } = useUser();
-
-  // {isLoading && <Loading />}
-  // need to set user id to spell user id (edit spellData to have seperate user id's with their spells listed below)
-  // {user && spellData.find((q) => q.id === user.id) && (
-
-
 
   export default function SpellList() {
     const { user, isLoading } = useUser();
@@ -32,8 +22,6 @@ import Footer from '../../components/Footer';
       try {
         const spellsCollectionRef = query(
           collection(db, "spells"),
-          // where("user", "==", "1")
-          // where("name", "==", user?.name)
           where("user", "==", user?.id)
         );
     
@@ -96,8 +84,7 @@ import Footer from '../../components/Footer';
           }}>
 
             <div className='style-image'>
-              {/* <img className='style-image-image' src='/spells1.png' style={{width:'400px', margin: '0.25rem'}} /> */}
-              <img className='style-image-image' src='/spellscrt3.png' style={{width:'400px', margin: '0.25rem', mixBlendMode: 'plus-lighter'}} />
+              <img className='style-image-image' src='/spellscrt7.png' style={{width:'400px', margin: '0.25rem', mixBlendMode: 'plus-lighter'}} />
 
             </div>
 
@@ -106,8 +93,7 @@ import Footer from '../../components/Footer';
             </div>
 
             <div className='style-mob'>
-              {/* <img className='style-image-image' src='/spells1.png' style={{width:'400px', margin: '0.25rem'}} /> */}
-              <img className='style-image-image' src='/spellscrt5.png' style={{width:'400px', margin: '0.25rem', mixBlendMode: 'plus-lighter'}} />
+              <img className='style-image-image' src='/spellscrt7.png' style={{width:'400px', margin: '0.25rem', mixBlendMode: 'plus-lighter'}} />
 
               <h2 className='vertical-spell'>Spells</h2>
             </div>
