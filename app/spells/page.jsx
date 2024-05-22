@@ -1,6 +1,9 @@
 'use client';
 
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
+import { db } from '../firebase';
+import { getDocs, collection, query, where } from 'firebase/firestore';
+
 
 import spellData from './spellData';
 
@@ -18,33 +21,75 @@ import Footer from '../../components/Footer';
   // need to set user id to spell user id (edit spellData to have seperate user id's with their spells listed below)
   // {user && spellData.find((q) => q.id === user.id) && (
 
+
+
   export default function SpellList() {
+    const { user, isLoading } = useUser();
+
+    const [spellList, setSpellList] = useState([]);
+
+    const getSpellList = async () => {
+      try {
+        const spellsCollectionRef = query(
+          collection(db, "spells"),
+          // where("user", "==", "1")
+          // where("name", "==", user?.name)
+          where("user", "==", user?.id)
+        );
+    
+        const data = await getDocs(spellsCollectionRef);
+        const filteredData = data.docs.map((doc) => ({
+          ...doc.data(), 
+          id: doc.id,
+        }));
+        setSpellList(filteredData);
+      } catch (err) {
+        console.error(err);
+      }
+    };
+
+    getSpellList();
+
+
+    // useEffect (() => {
+    //   const getSpellList = async () => {
+    //     try {
+
+    //       console.log(user);
+
+    //       const spellsCollectionRef = query(
+    //         collection(db, "spells"),
+    //         // where("user", "==", "1")
+    //         where("name", "==", user?.name)
+    //       );
+      
+    //       const data = await getDocs(spellsCollectionRef);
+    //       const filteredData = data.docs.map((doc) => ({
+    //         ...doc.data(), 
+    //         id: doc.id,
+    //       }));
+    //       setSpellList(filteredData);
+    //     } catch (err) {
+    //       console.error(err);
+    //     }
+    //   };
+  
+    //   getSpellList();
+    // }, []);
+  
+
     useEffect(() => {
       document.title = 'Spells | Drakehaven';
     }, []);
   
     return (
-      <>
-  
+      <>  
         <div className="testgrid" style={{
           display: "grid",
           gridTemplateColumns: "1fr 1fr",
           gap: "3rem"
         }}
         >
-            {/* <div className='info'>
-              {spellData.map((col, i) => (
-                <div>
-                  <Link className="spell-link" key={col.id} href={'/spells/' + col.id}>
-                    <h3>{col.title}</h3>
-                  </Link>
-                  <p className='px-3 py-2'>{col.subtitle}</p>
-                  <br></br>
-                </div>
-              ))}
-            </div> */}
-
-
           <div className='style drake-border stylegrid' style={{
             display: "grid",
             gridTemplateColumns: "1fr 1fr",
@@ -70,7 +115,19 @@ import Footer from '../../components/Footer';
           </div>
 
           <div className='info'>
-              {spellData.map((col, i) => (
+
+              {spellList.map((spell) => (
+                <div>
+                  <Link className="spell-link" key={spell.id} href={'/spells/' + spell.page}>
+                    <h3>{spell.title}</h3>
+                  </Link>
+                  <p className='px-3 py-2' style={{fontFamily: 'Ghibli', fontWeight: '100'}}>{spell.subtitle}</p>
+                  <br></br>
+
+                </div>
+              ))}
+
+              {/* {spellData.map((col, i) => (
                 <div>
                   <Link className="spell-link" key={col.id} href={'/spells/' + col.id}>
                     <h3>{col.title}</h3>
@@ -78,7 +135,7 @@ import Footer from '../../components/Footer';
                   <p className='px-3 py-2' style={{fontFamily: 'Ghibli', fontWeight: '100'}}>{col.subtitle}</p>
                   <br></br>
                 </div>
-              ))}
+              ))} */}
             </div>
         </div>
 
