@@ -8,6 +8,9 @@ import Link from 'next/link'
 import { useUser, withPageAuthRequired } from '@auth0/nextjs-auth0/client';
 import Loading from '../../components/Loading';
 
+import Footer from '../../components/Footer';
+
+
   export default function Map() {
     useEffect(() => {
       document.title = 'Map | Drakehaven';
@@ -17,6 +20,7 @@ import Loading from '../../components/Loading';
       <>
       <h1 className='mb-5' style={{fontFamily: "Ghibli", textAlign: 'center', color: '#e03222', textShadow: '0 0 12px rgba(255, 63, 68, 0.3)', mixBlendMode: 'plus-lighter'}}>Map</h1>
       <img src="/maps/1.png" style={{  display: 'block', marginLeft: 'auto', marginRight: 'auto', width: '90%', mixBlendMode: 'difference'}} />
+      {/* <Footer /> */}
     </>
     )
   }

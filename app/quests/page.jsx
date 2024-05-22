@@ -8,9 +8,8 @@ import { getDocs, collection } from 'firebase/firestore';
 import questData from './questData';
 
 import { Row, Col } from 'reactstrap';
-// import PageLink from './../PageLink';
 import Link from 'next/link'
-
+import Footer from '../../components/Footer';
 
 export default function QuestList() {
   const [questList, setQuestList] = useState([]);
@@ -79,6 +78,8 @@ export default function QuestList() {
     ))}
     </div> 
   </div>
+  <Footer />
+
     </>
   )
 }

@@ -7,6 +7,9 @@ import questData from '../questData';
 
 import { withRouter, NextRouter } from 'next/router';
 
+import Footer from '../../../components/Footer';
+
+
 export default function QuestDetails({
   params,
 }: {
@@ -31,6 +34,9 @@ export default function QuestDetails({
         <p className='quest-desc px-3'><span className='bold'>Received from:</span> {quest.given}</p>
         <p className='quest-desc px-3'><span className='bold'>Location:</span> {quest.location}</p>
       </div>
+
+      {/* <Footer /> */}
+
     </>
   )
 }

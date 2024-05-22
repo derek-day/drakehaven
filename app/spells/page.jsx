@@ -10,6 +10,8 @@ import Link from 'next/link'
 import { useUser, withPageAuthRequired } from '@auth0/nextjs-auth0/client';
 import Loading from '../../components/Loading';
 
+import Footer from '../../components/Footer';
+
   // const { user, isLoading } = useUser();
 
   // {isLoading && <Loading />}
@@ -78,8 +80,10 @@ import Loading from '../../components/Loading';
                 </div>
               ))}
             </div>
-
         </div>
+
+        <Footer />
+
     </>
     )
   }

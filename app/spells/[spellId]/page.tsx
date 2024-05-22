@@ -9,6 +9,9 @@ import { withRouter, NextRouter } from 'next/router';
 
 import { Row, Col } from 'reactstrap';
 
+import Footer from '../../../components/Footer';
+
+
 export default function SpellDetails({
   params,
 }: {
@@ -39,6 +42,7 @@ export default function SpellDetails({
           <li><span className='bold'>Description:</span> {spell.description}</li>
         </ul>
       </div>
+      {/* <Footer /> */}
     </>
   )
 }
