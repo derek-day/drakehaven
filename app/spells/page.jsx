@@ -125,7 +125,7 @@ import Footer from '../../components/Footer';
             </div>
         </div>
 
-        <Footer />
+        {/* <Footer /> */}
 
     </>
     )
