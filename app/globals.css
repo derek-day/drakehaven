@@ -173,6 +173,7 @@ p code {
 
 .drake-border {
   border: 2px solid #5e5a5a;
+  border: 2px solid #e03222;
   padding: 0.8em;
   width: 100%;
   position: relative;
@@ -185,6 +186,7 @@ p code {
 .drake-border::before {
   background: none;
   border: 1px solid #4C4949;
+  border: 1px solid #8D190E;
   /* border: 1px solid #8D190E;
   border: 1px solid #e03222; */
 

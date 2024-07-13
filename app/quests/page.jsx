@@ -42,7 +42,7 @@ export default function QuestList() {
   <div className="testgrid" style={{
     display: "grid",
     gridTemplateColumns: "1fr 1fr",
-    gap: "3rem"
+    gap: "2rem"
   }}
   >
     <div className='style drake-border stylegrid' style={{
