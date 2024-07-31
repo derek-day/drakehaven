@@ -169,6 +169,7 @@ p code {
   text-decoration: underline !important;
   text-decoration-thickness: 0.7px !important;
   text-underline-offset: 9px;
+  color: #fdd552 !important;
 }
 
 .drake-border {
@@ -356,7 +357,7 @@ p code {
   text-decoration: underline !important;
   text-decoration-thickness: 0.7px !important;
   text-underline-offset: 9px;
-  text-decoration-color: white !important;
+  text-decoration-color: #fdd552 !important;
 }
 
 .quest-link h3:hover {
@@ -403,7 +404,7 @@ p code {
   text-decoration: underline !important;
   text-decoration-thickness: 0.7px !important;
   text-underline-offset: 9px;
-  text-decoration-color: white !important;
+  text-decoration-color: #fdd552 !important;
 }
 
 .spell-link h3:hover {
