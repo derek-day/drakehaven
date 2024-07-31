@@ -61,6 +61,16 @@ const NavBar = () => {
                     </PageLink>
                   </NavItem>
                   <NavItem>
+                    <PageLink href="/loot" className="nav-link" testId="navbar-loot">
+                      Loot
+                    </PageLink>
+                  </NavItem>
+                  <NavItem>
+                    <PageLink href="/powers" className="nav-link" testId="navbar-powers">
+                      Powers
+                    </PageLink>
+                  </NavItem>
+                  <NavItem>
                     <PageLink href="/map" className="nav-link" testId="navbar-external">
                       Map
                     </PageLink>
